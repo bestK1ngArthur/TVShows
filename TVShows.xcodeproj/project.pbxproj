@@ -18,6 +18,7 @@
 		682B4CB21C874793005D2469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CAF1C874793005D2469 /* main.m */; };
 		682B4CB51C87479F005D2469 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CB31C87479F005D2469 /* MainMenu.xib */; };
 		682B4CB81C874A5A005D2469 /* RSSConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */; };
+		682B4CBB1C876B18005D2469 /* ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CBA1C876B18005D2469 /* ScreenShot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		682B4CB41C87479F005D2469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		682B4CB61C874A5A005D2469 /* RSSConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSConnectionManager.h; sourceTree = "<group>"; };
 		682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSConnectionManager.m; sourceTree = "<group>"; };
+		682B4CBA1C876B18005D2469 /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		682B4C701C874014005D2469 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				682B4CB91C876B18005D2469 /* Support */,
 				682B4CAD1C874793005D2469 /* Assets.xcassets */,
 				682B4CAE1C874793005D2469 /* Info.plist */,
 				682B4CAF1C874793005D2469 /* main.m */,
@@ -149,6 +152,14 @@
 				682B4C911C874014005D2469 /* Info.plist */,
 			);
 			path = TVShowsUITests;
+			sourceTree = "<group>";
+		};
+		682B4CB91C876B18005D2469 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				682B4CBA1C876B18005D2469 /* ScreenShot.png */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				682B4CB11C874793005D2469 /* Info.plist in Resources */,
 				682B4CB01C874793005D2469 /* Assets.xcassets in Resources */,
 				682B4CB51C87479F005D2469 /* MainMenu.xib in Resources */,
+				682B4CBB1C876B18005D2469 /* ScreenShot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
