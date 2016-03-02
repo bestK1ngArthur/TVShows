@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		682B4C6F1C874014005D2469 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4C6E1C874014005D2469 /* AppDelegate.m */; };
-		682B4C721C874014005D2469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4C711C874014005D2469 /* main.m */; };
-		682B4C751C874014005D2469 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4C741C874014005D2469 /* ViewController.m */; };
-		682B4C771C874014005D2469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682B4C761C874014005D2469 /* Assets.xcassets */; };
-		682B4C7A1C874014005D2469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682B4C781C874014005D2469 /* Main.storyboard */; };
 		682B4C851C874014005D2469 /* TVShowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4C841C874014005D2469 /* TVShowsTests.m */; };
 		682B4C901C874014005D2469 /* TVShowsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4C8F1C874014005D2469 /* TVShowsUITests.m */; };
+		682B4C9E1C87456B005D2469 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B4C9D1C87456B005D2469 /* Cocoa.framework */; };
+		682B4CA01C874572005D2469 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B4C9F1C874572005D2469 /* WebKit.framework */; };
+		682B4CA91C874783005D2469 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CA21C874783005D2469 /* AppDelegate.m */; };
+		682B4CAB1C874783005D2469 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CA61C874783005D2469 /* StartAtLoginController.m */; };
+		682B4CB01C874793005D2469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CAD1C874793005D2469 /* Assets.xcassets */; };
+		682B4CB11C874793005D2469 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CAE1C874793005D2469 /* Info.plist */; };
+		682B4CB21C874793005D2469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CAF1C874793005D2469 /* main.m */; };
+		682B4CB51C87479F005D2469 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CB31C87479F005D2469 /* MainMenu.xib */; };
+		682B4CB81C874A5A005D2469 /* RSSConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +39,24 @@
 
 /* Begin PBXFileReference section */
 		682B4C6A1C874014005D2469 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		682B4C6D1C874014005D2469 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		682B4C6E1C874014005D2469 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		682B4C711C874014005D2469 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		682B4C731C874014005D2469 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		682B4C741C874014005D2469 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		682B4C761C874014005D2469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		682B4C791C874014005D2469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		682B4C7B1C874014005D2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		682B4C801C874014005D2469 /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		682B4C841C874014005D2469 /* TVShowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVShowsTests.m; sourceTree = "<group>"; };
 		682B4C861C874014005D2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		682B4C8B1C874014005D2469 /* TVShowsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShowsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		682B4C8F1C874014005D2469 /* TVShowsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVShowsUITests.m; sourceTree = "<group>"; };
 		682B4C911C874014005D2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		682B4C9D1C87456B005D2469 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		682B4C9F1C874572005D2469 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		682B4CA11C874783005D2469 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		682B4CA21C874783005D2469 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		682B4CA51C874783005D2469 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
+		682B4CA61C874783005D2469 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
+		682B4CAD1C874793005D2469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		682B4CAE1C874793005D2469 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		682B4CAF1C874793005D2469 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		682B4CB41C87479F005D2469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		682B4CB61C874A5A005D2469 /* RSSConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSConnectionManager.h; sourceTree = "<group>"; };
+		682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682B4CA01C874572005D2469 /* WebKit.framework in Frameworks */,
+				682B4C9E1C87456B005D2469 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +109,13 @@
 		682B4C6C1C874014005D2469 /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
-				682B4C6D1C874014005D2469 /* AppDelegate.h */,
-				682B4C6E1C874014005D2469 /* AppDelegate.m */,
-				682B4C731C874014005D2469 /* ViewController.h */,
-				682B4C741C874014005D2469 /* ViewController.m */,
-				682B4C761C874014005D2469 /* Assets.xcassets */,
-				682B4C781C874014005D2469 /* Main.storyboard */,
-				682B4C7B1C874014005D2469 /* Info.plist */,
+				682B4CA11C874783005D2469 /* AppDelegate.h */,
+				682B4CA21C874783005D2469 /* AppDelegate.m */,
+				682B4CB61C874A5A005D2469 /* RSSConnectionManager.h */,
+				682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */,
+				682B4CA51C874783005D2469 /* StartAtLoginController.h */,
+				682B4CA61C874783005D2469 /* StartAtLoginController.m */,
+				682B4CB31C87479F005D2469 /* MainMenu.xib */,
 				682B4C701C874014005D2469 /* Supporting Files */,
 			);
 			path = TVShows;
@@ -114,7 +124,11 @@
 		682B4C701C874014005D2469 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				682B4C711C874014005D2469 /* main.m */,
+				682B4CAD1C874793005D2469 /* Assets.xcassets */,
+				682B4CAE1C874793005D2469 /* Info.plist */,
+				682B4CAF1C874793005D2469 /* main.m */,
+				682B4C9F1C874572005D2469 /* WebKit.framework */,
+				682B4C9D1C87456B005D2469 /* Cocoa.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -240,8 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682B4C771C874014005D2469 /* Assets.xcassets in Resources */,
-				682B4C7A1C874014005D2469 /* Main.storyboard in Resources */,
+				682B4CB11C874793005D2469 /* Info.plist in Resources */,
+				682B4CB01C874793005D2469 /* Assets.xcassets in Resources */,
+				682B4CB51C87479F005D2469 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682B4C751C874014005D2469 /* ViewController.m in Sources */,
-				682B4C721C874014005D2469 /* main.m in Sources */,
-				682B4C6F1C874014005D2469 /* AppDelegate.m in Sources */,
+				682B4CB21C874793005D2469 /* main.m in Sources */,
+				682B4CA91C874783005D2469 /* AppDelegate.m in Sources */,
+				682B4CAB1C874783005D2469 /* StartAtLoginController.m in Sources */,
+				682B4CB81C874A5A005D2469 /* RSSConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +320,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		682B4C781C874014005D2469 /* Main.storyboard */ = {
+		682B4CB31C87479F005D2469 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				682B4C791C874014005D2469 /* Base */,
+				682B4CB41C87479F005D2469 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,6 +417,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TVShows/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artembelkov.TVShows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +430,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TVShows/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artembelkov.TVShows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -487,6 +505,7 @@
 				682B4C961C874014005D2469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		682B4C971C874014005D2469 /* Build configuration list for PBXNativeTarget "TVShowsTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +514,7 @@
 				682B4C991C874014005D2469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		682B4C9A1C874014005D2469 /* Build configuration list for PBXNativeTarget "TVShowsUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +523,7 @@
 				682B4C9C1C874014005D2469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
