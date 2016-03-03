@@ -83,7 +83,7 @@ NSString *const TVShowsNotificationConnectionDidFinishLoading = @"TVShowsNotific
         return;
     }
     
-    NSArray *titleArr = [document nodesForXPath:@"rss/channel/title" error:nil];
+    //NSArray *titleArr = [document nodesForXPath:@"rss/channel/title" error:nil];
     
     self.feedArray = [[NSMutableArray alloc] init];
     
@@ -98,10 +98,37 @@ NSString *const TVShowsNotificationConnectionDidFinishLoading = @"TVShowsNotific
         NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:title, @"title",
                               description, @"description", nil];
         
-        [self.feedArray addObject:dict];
+        if (([title rangeOfString:@"1080p"].location == NSNotFound) && ([title rangeOfString:@"MP4"].location == NSNotFound)) {
+            [self.feedArray addObject:dict];
+        }
+        
     }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:TVShowsNotificationConnectionDidFinishLoading object:nil];
+    [self launchScript];
+}
+
+#pragma mark - Scripts
+
+- (void)launchScript {
+    
+    /*
+    NSBundle *mainBundle=[NSBundle mainBundle];
+    NSString *path=[mainBundle pathForResource:@"lostfilm-dragger" ofType:@"pl"];
+    
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath: path];
+    
+    NSPipe *pipe = [NSPipe pipe];
+    [task setStandardOutput: pipe];
+    [task setStandardError: pipe];
+    
+    [task setLaunchPath:@"/bin/pl"];
+    
+    [task launch];
+    [task waitUntilExit];
+    */
+    
 }
 
 @end

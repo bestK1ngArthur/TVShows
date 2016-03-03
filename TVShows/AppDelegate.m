@@ -52,60 +52,19 @@ static NSString *const kStatusMenuTemplateNameLight = @"StatusMenuTemplateLight"
         }
     }
     
-    for (int i = 0; i < 1; i++) {
+    // The menu to add the display modes to, by default directly into the main menu
+    NSMenu *containerMenu = menu;
         
-        // The menu to add the display modes to, by default directly into the main menu
-        NSMenu *containerMenu = menu;
         
-        /*
-        if (2 > 1) {
-            
-            NSMenu *subMenu = [NSMenu new];
-            NSMenuItem *subMenuItem = [NSMenuItem new];
-        
-            subMenuItem.title = @"Test";
-            
-            subMenuItem.submenu = subMenu;
-            [containerMenu insertItem:subMenuItem atIndex:i];
-            containerMenu = subMenu;
-            
-        }
-        */
-        
-        // Add the display modes to the container menu (either the main menu or a display submenu)
-        //NSArray *menuItems = [DisplayModeMenuItem getMenuItemsForDisplay:displays[i]];
-        for (NSDictionary *dict in [[RSSConnectionManager defaultConnectionManager] feedArray]) {
+    // Add the display modes to the container menu (either the main menu or a display submenu)
+    for (NSDictionary *dict in [[RSSConnectionManager defaultConnectionManager] feedArray]) {
 
-            NSMenuItem *menuItem = [[NSMenuItem alloc] init];
+        NSMenuItem *menuItem = [[NSMenuItem alloc] init];
             
-            menuItem.title = [dict objectForKey:@"title"];
+        menuItem.title = [dict objectForKey:@"title"];
             
-            [containerMenu insertItem:menuItem atIndex:0];
-        }
+        [containerMenu insertItem:menuItem atIndex:0];
     }
 }
-
-#pragma mark TableView
-
-/*
--(NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView{
-    return [feedArray count];
-}
-
--(id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex{
-    NSDictionary *dict = [feedArray objectAtIndex:rowIndex];
-    
-    return [dict objectForKey:@"title"];
-}
-
--(void)tableViewSelectionDidChange:(NSNotification *)aNotification{
-    NSInteger selectedRow = [tableView selectedRow];
-    
-    NSDictionary *dict = [feedArray objectAtIndex:selectedRow];
-    NSString *description = [dict objectForKey:@"description"];
-    
-    [[webView mainFrame] loadHTMLString:description baseURL:[NSURL URLWithString:@""]];
-}
-*/
 
 @end
