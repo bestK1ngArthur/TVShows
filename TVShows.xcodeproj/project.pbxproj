@@ -15,13 +15,13 @@
 		682B4CAB1C874783005D2469 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CA61C874783005D2469 /* StartAtLoginController.m */; };
 		682B4CB01C874793005D2469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CAD1C874793005D2469 /* Assets.xcassets */; };
 		682B4CB21C874793005D2469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CAF1C874793005D2469 /* main.m */; };
-		682B4CB51C87479F005D2469 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CB31C87479F005D2469 /* MainMenu.xib */; };
 		682B4CB81C874A5A005D2469 /* RSSConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */; };
 		682B4CBB1C876B18005D2469 /* ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CBA1C876B18005D2469 /* ScreenShot.png */; };
 		68EC17741C88E18D00038F23 /* dragger.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17701C88E18D00038F23 /* dragger.cfg */; };
 		68EC17751C88E18D00038F23 /* lostfilm-dragger.pl in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17711C88E18D00038F23 /* lostfilm-dragger.pl */; };
 		68EC17761C88E18D00038F23 /* lostfilm.cookie in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17721C88E18D00038F23 /* lostfilm.cookie */; };
 		68EC17771C88E18D00038F23 /* lostfilm.list in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17731C88E18D00038F23 /* lostfilm.list */; };
+		A5DC16011DA97EAD005CAA45 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CB31C87479F005D2469 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,8 +288,8 @@
 				682B4CB01C874793005D2469 /* Assets.xcassets in Resources */,
 				68EC17741C88E18D00038F23 /* dragger.cfg in Resources */,
 				68EC17751C88E18D00038F23 /* lostfilm-dragger.pl in Resources */,
-				682B4CB51C87479F005D2469 /* MainMenu.xib in Resources */,
 				682B4CBB1C876B18005D2469 /* ScreenShot.png in Resources */,
+				A5DC16011DA97EAD005CAA45 /* MainMenu.xib in Resources */,
 				68EC17761C88E18D00038F23 /* lostfilm.cookie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
