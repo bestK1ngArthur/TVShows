@@ -89,7 +89,8 @@ NSString *const TVShowsNotificationConnectionDidFinishLoading = @"TVShowsNotific
     
     NSArray *entries = [document nodesForXPath:@"rss/channel/item" error:nil];
     
-    for(int i = 0; i < [entries count]; i++){
+    for(int i = 0; i < [entries count]; i++) {
+        
         NSXMLNode *entry = [entries objectAtIndex:i];
         
         NSString *title = [[[entry nodesForXPath:@"title" error:nil] objectAtIndex:0] stringValue];
@@ -102,33 +103,12 @@ NSString *const TVShowsNotificationConnectionDidFinishLoading = @"TVShowsNotific
             [self.feedArray addObject:dict];
         }
         
+        NSLog(@"%@", entry);
     }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:TVShowsNotificationConnectionDidFinishLoading object:nil];
-    [self launchScript];
+
 }
 
-#pragma mark - Scripts
-
-- (void)launchScript {
-    
-    /*
-    NSBundle *mainBundle=[NSBundle mainBundle];
-    NSString *path=[mainBundle pathForResource:@"lostfilm-dragger" ofType:@"pl"];
-    
-    NSTask *task = [[NSTask alloc] init];
-    [task setLaunchPath: path];
-    
-    NSPipe *pipe = [NSPipe pipe];
-    [task setStandardOutput: pipe];
-    [task setStandardError: pipe];
-    
-    [task setLaunchPath:@"/bin/pl"];
-    
-    [task launch];
-    [task waitUntilExit];
-    */
-    
-}
 
 @end

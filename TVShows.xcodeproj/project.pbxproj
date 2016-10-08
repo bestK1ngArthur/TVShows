@@ -17,11 +17,8 @@
 		682B4CB21C874793005D2469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CAF1C874793005D2469 /* main.m */; };
 		682B4CB81C874A5A005D2469 /* RSSConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */; };
 		682B4CBB1C876B18005D2469 /* ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CBA1C876B18005D2469 /* ScreenShot.png */; };
-		68EC17741C88E18D00038F23 /* dragger.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17701C88E18D00038F23 /* dragger.cfg */; };
-		68EC17751C88E18D00038F23 /* lostfilm-dragger.pl in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17711C88E18D00038F23 /* lostfilm-dragger.pl */; };
-		68EC17761C88E18D00038F23 /* lostfilm.cookie in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17721C88E18D00038F23 /* lostfilm.cookie */; };
-		68EC17771C88E18D00038F23 /* lostfilm.list in Resources */ = {isa = PBXBuildFile; fileRef = 68EC17731C88E18D00038F23 /* lostfilm.list */; };
 		A5DC16011DA97EAD005CAA45 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682B4CB31C87479F005D2469 /* MainMenu.xib */; };
+		A5DC16041DA984FB005CAA45 /* TVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DC16031DA984FB005CAA45 /* TVShow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +59,8 @@
 		682B4CB61C874A5A005D2469 /* RSSConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSConnectionManager.h; sourceTree = "<group>"; };
 		682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSConnectionManager.m; sourceTree = "<group>"; };
 		682B4CBA1C876B18005D2469 /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
-		68EC17701C88E18D00038F23 /* dragger.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dragger.cfg; sourceTree = "<group>"; };
-		68EC17711C88E18D00038F23 /* lostfilm-dragger.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = "lostfilm-dragger.pl"; sourceTree = "<group>"; };
-		68EC17721C88E18D00038F23 /* lostfilm.cookie */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lostfilm.cookie; sourceTree = "<group>"; };
-		68EC17731C88E18D00038F23 /* lostfilm.list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lostfilm.list; sourceTree = "<group>"; };
+		A5DC16021DA984FB005CAA45 /* TVShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShow.h; sourceTree = "<group>"; };
+		A5DC16031DA984FB005CAA45 /* TVShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +117,11 @@
 				682B4CA21C874783005D2469 /* AppDelegate.m */,
 				682B4CB61C874A5A005D2469 /* RSSConnectionManager.h */,
 				682B4CB71C874A5A005D2469 /* RSSConnectionManager.m */,
+				A5DC16021DA984FB005CAA45 /* TVShow.h */,
+				A5DC16031DA984FB005CAA45 /* TVShow.m */,
 				682B4CA51C874783005D2469 /* StartAtLoginController.h */,
 				682B4CA61C874783005D2469 /* StartAtLoginController.m */,
 				682B4CB31C87479F005D2469 /* MainMenu.xib */,
-				68EC17781C88E19600038F23 /* Scripts */,
 				682B4C701C874014005D2469 /* Supporting Files */,
 			);
 			path = TVShows;
@@ -168,17 +164,6 @@
 				682B4CBA1C876B18005D2469 /* ScreenShot.png */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		68EC17781C88E19600038F23 /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				68EC17701C88E18D00038F23 /* dragger.cfg */,
-				68EC17711C88E18D00038F23 /* lostfilm-dragger.pl */,
-				68EC17721C88E18D00038F23 /* lostfilm.cookie */,
-				68EC17731C88E18D00038F23 /* lostfilm.list */,
-			);
-			name = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,13 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68EC17771C88E18D00038F23 /* lostfilm.list in Resources */,
 				682B4CB01C874793005D2469 /* Assets.xcassets in Resources */,
-				68EC17741C88E18D00038F23 /* dragger.cfg in Resources */,
-				68EC17751C88E18D00038F23 /* lostfilm-dragger.pl in Resources */,
 				682B4CBB1C876B18005D2469 /* ScreenShot.png in Resources */,
 				A5DC16011DA97EAD005CAA45 /* MainMenu.xib in Resources */,
-				68EC17761C88E18D00038F23 /* lostfilm.cookie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +300,7 @@
 				682B4CA91C874783005D2469 /* AppDelegate.m in Sources */,
 				682B4CAB1C874783005D2469 /* StartAtLoginController.m in Sources */,
 				682B4CB81C874A5A005D2469 /* RSSConnectionManager.m in Sources */,
+				A5DC16041DA984FB005CAA45 /* TVShow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
