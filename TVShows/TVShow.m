@@ -10,4 +10,10 @@
 
 @implementation TVShow
 
++ (instancetype)showFromResponse:(NSDictionary *)response {
+    
+    
+    return nil;
+}
+
 @end

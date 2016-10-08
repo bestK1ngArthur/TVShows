@@ -8,9 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    
+    TVShowQualitySD,
+    TVShowQualityHD,
+    TVShowQualityFullHD
+    
+} TVShowQuality;
+
 @interface TVShow : NSObject
 
 @property (strong, nonatomic) NSString *title;
+@property (assign, nonatomic) TVShowQuality quality;
 
 @property (assign, nonatomic) NSUInteger season;
 @property (assign, nonatomic) NSUInteger episode;
@@ -19,5 +28,7 @@
 
 @property (strong, nonatomic) NSImage *imageLink;
 @property (strong, nonatomic) NSURL *torrentLink;
+
++ (instancetype)showFromResponse:(NSDictionary *)response;
 
 @end
